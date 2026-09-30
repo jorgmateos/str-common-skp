@@ -1,0 +1,21 @@
+README.md
+  s_bd38c6233fbbe2::t_0801da6be047fe 1-83
+Tests/STRCommonSkpTests/STRCommonSkpTests.swift
+  s_bd38c6233fbbe2::t_d98d04a9f50fca 1-21
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f55edcc32d47168082e203307b174889ec6414eb",
+  "prompts": {},
+  "sessions": {
+    "s_bd38c6233fbbe2": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "d21df541-7f71-4555-963e-90f128141957",
+        "model": "claude-opus-5.5"
+      },
+      "human_author": "Jorge García Mateos <jorgegmateos@gmail.com>"
+    }
+  }
+}

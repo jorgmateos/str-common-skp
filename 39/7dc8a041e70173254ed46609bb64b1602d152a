@@ -1,0 +1,31 @@
+README.md
+  s_bd38c6233fbbe2::t_3726493d73ec5b 33-47,50,58,86-113
+Sources/STRCommonSkp/Data/HTTPClient.swift
+  s_bd38c6233fbbe2::t_39659bdc5385dd 1-16
+Sources/STRCommonSkp/Data/TodoDTO.swift
+  s_bd38c6233fbbe2::t_00f67934312eeb 1-13
+Sources/STRCommonSkp/Model/NetworkError.swift
+  s_bd38c6233fbbe2::t_2f038b48684a50 1-6
+Sources/STRCommonSkp/Model/Todo.swift
+  s_bd38c6233fbbe2::t_03bb70bd56ec99 1-14
+Sources/STRCommonSkp/UseCase/TodoUseCase.swift
+  s_bd38c6233fbbe2::t_6c116774c6793e 1-42
+Tests/STRCommonSkpTests/TodoUseCaseTests.swift
+  s_bd38c6233fbbe2::t_3156effe651ab4 1-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "397dc8a041e70173254ed46609bb64b1602d152a",
+  "prompts": {},
+  "sessions": {
+    "s_bd38c6233fbbe2": {
+      "agent_id": {
+        "tool": "github-copilot-cli",
+        "id": "d21df541-7f71-4555-963e-90f128141957",
+        "model": "claude-opus-5.5"
+      },
+      "human_author": "Jorge García Mateos <jorgegmateos@gmail.com>"
+    }
+  }
+}

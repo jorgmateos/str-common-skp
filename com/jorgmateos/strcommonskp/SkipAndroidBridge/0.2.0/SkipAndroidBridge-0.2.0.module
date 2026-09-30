@@ -1,0 +1,470 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.jorgmateos.strcommonskp",
+    "module": "SkipAndroidBridge",
+    "version": "0.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDefaultApiPublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipBridge",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipFoundation",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipAndroidBridge-0.2.0-debug.aar",
+          "url": "SkipAndroidBridge-0.2.0-debug.aar",
+          "size": 19067,
+          "sha512": "0f4e59c8c5d8f3dbc65adee2bdb5c1e4827a6ad60d2d8ab85c5d7de45613b57a521aa3f16beecd88dccf5b5c451138264976e8de342be6a25a71dbdfd3ffa1be",
+          "sha256": "1d713e7ef32aa28b1336bc3e311e8fc2549671ad5c85c8a9687e2d73cbec04d5",
+          "sha1": "5aab46f2290cb81b147fe73f621da23c4fca4a43",
+          "md5": "e1668eebea7d539cef93be78058b9833"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDefaultRuntimePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp"
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark-ext-gfm-strikethrough",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipBridge",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipFoundation",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipAndroidBridge-0.2.0-debug.aar",
+          "url": "SkipAndroidBridge-0.2.0-debug.aar",
+          "size": 19067,
+          "sha512": "0f4e59c8c5d8f3dbc65adee2bdb5c1e4827a6ad60d2d8ab85c5d7de45613b57a521aa3f16beecd88dccf5b5c451138264976e8de342be6a25a71dbdfd3ffa1be",
+          "sha256": "1d713e7ef32aa28b1336bc3e311e8fc2549671ad5c85c8a9687e2d73cbec04d5",
+          "sha1": "5aab46f2290cb81b147fe73f621da23c4fca4a43",
+          "md5": "e1668eebea7d539cef93be78058b9833"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDefaultSourcePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "SkipAndroidBridge-0.2.0-debug-sources.jar",
+          "url": "SkipAndroidBridge-0.2.0-debug-sources.jar",
+          "size": 4905,
+          "sha512": "b8893d44b40e910daa1dc035c554d1b570349f9787b98ec3fc99ebe6e7ed6bca00a49c4780e7d98c19af7f9e989a90e5b4afd766ec5baa272faca388c96f9f52",
+          "sha256": "774975791f96454a9c3e9852c0cbb6d31fcb5ec9ee203d1ce6dc474741b5479e",
+          "sha1": "ab6e9373519bb62ce444cde4093691b78096e398",
+          "md5": "359ae2bed2bdb94e3f270bc525a43249"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultApiPublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipBridge",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipFoundation",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipAndroidBridge-0.2.0-release.aar",
+          "url": "SkipAndroidBridge-0.2.0-release.aar",
+          "size": 18232,
+          "sha512": "88dffea9b59e94150316a8392f172bcbd9ed7f4188dcbee2f3866348201957916af343ca681dd88a3f20280b75b68477420621aa4e022918ee44f2cfda1f98d0",
+          "sha256": "a3f7372dbb4b85b2e991904d37dafcdb4ed7c651040478e47c23962c572f47c7",
+          "sha1": "13ce668b2c03fb75fdd19e780acc8f24692080d7",
+          "md5": "89081c8a8648f7597ab5718e80f49a59"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultRuntimePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp"
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark-ext-gfm-strikethrough",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipBridge",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipFoundation",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipAndroidBridge-0.2.0-release.aar",
+          "url": "SkipAndroidBridge-0.2.0-release.aar",
+          "size": 18232,
+          "sha512": "88dffea9b59e94150316a8392f172bcbd9ed7f4188dcbee2f3866348201957916af343ca681dd88a3f20280b75b68477420621aa4e022918ee44f2cfda1f98d0",
+          "sha256": "a3f7372dbb4b85b2e991904d37dafcdb4ed7c651040478e47c23962c572f47c7",
+          "sha1": "13ce668b2c03fb75fdd19e780acc8f24692080d7",
+          "md5": "89081c8a8648f7597ab5718e80f49a59"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultSourcePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "SkipAndroidBridge-0.2.0-release-sources.jar",
+          "url": "SkipAndroidBridge-0.2.0-release-sources.jar",
+          "size": 4905,
+          "sha512": "b8893d44b40e910daa1dc035c554d1b570349f9787b98ec3fc99ebe6e7ed6bca00a49c4780e7d98c19af7f9e989a90e5b4afd766ec5baa272faca388c96f9f52",
+          "sha256": "774975791f96454a9c3e9852c0cbb6d31fcb5ec9ee203d1ce6dc474741b5479e",
+          "sha1": "ab6e9373519bb62ce444cde4093691b78096e398",
+          "md5": "359ae2bed2bdb94e3f270bc525a43249"
+        }
+      ]
+    }
+  ]
+}

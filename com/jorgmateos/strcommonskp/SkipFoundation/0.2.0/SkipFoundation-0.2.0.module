@@ -1,0 +1,414 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.jorgmateos.strcommonskp",
+    "module": "SkipFoundation",
+    "version": "0.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDefaultApiPublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipFoundation-0.2.0-debug.aar",
+          "url": "SkipFoundation-0.2.0-debug.aar",
+          "size": 1290785,
+          "sha512": "0423241539daeb5811d8e992dc3a30e6972db0a481514e6f635c07d40e40ca2c5622d9f4b20ec64b49aaff03da587a3d8894f8a4ca85edf2f21d8fdf9b889910",
+          "sha256": "496233c571aba9a1020e4d72f33e941fd1cd958b3ec56cef5e2e15e62c2f86f7",
+          "sha1": "e61d480bd6b76830e2c4c2ad7aa224b4beb768fa",
+          "md5": "174b536e5e564a2082823dedda316b49"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDefaultRuntimePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp"
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark-ext-gfm-strikethrough",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipFoundation-0.2.0-debug.aar",
+          "url": "SkipFoundation-0.2.0-debug.aar",
+          "size": 1290785,
+          "sha512": "0423241539daeb5811d8e992dc3a30e6972db0a481514e6f635c07d40e40ca2c5622d9f4b20ec64b49aaff03da587a3d8894f8a4ca85edf2f21d8fdf9b889910",
+          "sha256": "496233c571aba9a1020e4d72f33e941fd1cd958b3ec56cef5e2e15e62c2f86f7",
+          "sha1": "e61d480bd6b76830e2c4c2ad7aa224b4beb768fa",
+          "md5": "174b536e5e564a2082823dedda316b49"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDefaultSourcePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "SkipFoundation-0.2.0-debug-sources.jar",
+          "url": "SkipFoundation-0.2.0-debug-sources.jar",
+          "size": 206809,
+          "sha512": "e31e0447e488978cd5b5f4eee15b90682b989a69e3e171e215546d9db67763faee527e6990ba33903d884c4a9d21721d0ef0f74dba835148d52c6a0702bd89ed",
+          "sha256": "408c9ba638a68a40063f69141f16c3c88ae5258ae7c8997b179d9aff5fd319c9",
+          "sha1": "cb357ec0c20f7e93e656968d3e3a233bd32f614f",
+          "md5": "90345c49b93ec88e8b4ffa1af5eb443f"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultApiPublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipFoundation-0.2.0-release.aar",
+          "url": "SkipFoundation-0.2.0-release.aar",
+          "size": 1225124,
+          "sha512": "b60ed86f3db3d16c80a3ea1abc6e4c41e1f06c6041bfc4f78e429ca16abd7ff422037f8fac95209e632cc7bbdc95e2641affc22da35f14f5161032db1c4d4793",
+          "sha256": "a02707b6e8e7d1eda6471a591435baafe11a3dee26706812ea9b83f30d65fd44",
+          "sha1": "fab8a71f13845ebb41a001dbd49f704ca76f2ff6",
+          "md5": "3c862f5f3ca0810c07d39b7f85ae362a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultRuntimePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp-bom",
+          "version": {
+            "requires": "5.3.2"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp"
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.commonmark",
+          "module": "commonmark-ext-gfm-strikethrough",
+          "version": {
+            "requires": "0.28.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "com.jorgmateos.strcommonskp",
+          "module": "SkipLib",
+          "version": {
+            "requires": "0.2.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipFoundation-0.2.0-release.aar",
+          "url": "SkipFoundation-0.2.0-release.aar",
+          "size": 1225124,
+          "sha512": "b60ed86f3db3d16c80a3ea1abc6e4c41e1f06c6041bfc4f78e429ca16abd7ff422037f8fac95209e632cc7bbdc95e2641affc22da35f14f5161032db1c4d4793",
+          "sha256": "a02707b6e8e7d1eda6471a591435baafe11a3dee26706812ea9b83f30d65fd44",
+          "sha1": "fab8a71f13845ebb41a001dbd49f704ca76f2ff6",
+          "md5": "3c862f5f3ca0810c07d39b7f85ae362a"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultSourcePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "SkipFoundation-0.2.0-release-sources.jar",
+          "url": "SkipFoundation-0.2.0-release-sources.jar",
+          "size": 206809,
+          "sha512": "e31e0447e488978cd5b5f4eee15b90682b989a69e3e171e215546d9db67763faee527e6990ba33903d884c4a9d21721d0ef0f74dba835148d52c6a0702bd89ed",
+          "sha256": "408c9ba638a68a40063f69141f16c3c88ae5258ae7c8997b179d9aff5fd319c9",
+          "sha1": "cb357ec0c20f7e93e656968d3e3a233bd32f614f",
+          "md5": "90345c49b93ec88e8b4ffa1af5eb443f"
+        }
+      ]
+    }
+  ]
+}

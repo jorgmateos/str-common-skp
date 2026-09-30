@@ -1,0 +1,328 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.jorgmateos.strcommonskp",
+    "module": "SkipUnit",
+    "version": "0.2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "debugVariantDefaultApiPublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipUnit-0.2.0-debug.aar",
+          "url": "SkipUnit-0.2.0-debug.aar",
+          "size": 13301,
+          "sha512": "c7ebd7dcf64ed79b687fd0e0bf2d47da7b57286f418054298dd6115c90b8a7611135618361492ef3d237f3531d00bb0464679de2c8bffaf4c450534215f5578d",
+          "sha256": "6cd4c4d898a3a79a378911a4e318f0662af413832a96f7d45d09716b1314500c",
+          "sha1": "e5b619494ec54f8a97eae83a4e4ddb88c2319b05",
+          "md5": "84afbba23c8938ef41ef8feed984c7eb"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDefaultRuntimePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipUnit-0.2.0-debug.aar",
+          "url": "SkipUnit-0.2.0-debug.aar",
+          "size": 13301,
+          "sha512": "c7ebd7dcf64ed79b687fd0e0bf2d47da7b57286f418054298dd6115c90b8a7611135618361492ef3d237f3531d00bb0464679de2c8bffaf4c450534215f5578d",
+          "sha256": "6cd4c4d898a3a79a378911a4e318f0662af413832a96f7d45d09716b1314500c",
+          "sha1": "e5b619494ec54f8a97eae83a4e4ddb88c2319b05",
+          "md5": "84afbba23c8938ef41ef8feed984c7eb"
+        }
+      ]
+    },
+    {
+      "name": "debugVariantDefaultSourcePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "debug",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "SkipUnit-0.2.0-debug-sources.jar",
+          "url": "SkipUnit-0.2.0-debug-sources.jar",
+          "size": 2414,
+          "sha512": "f3622566235d47e0eeed670bc47e2de0eadcf7ea9b0edcf5fea0e1e08e0a030d7801fe5f91e9dd5153f7216c04d4eb26917c603e46b3c8a2d8e2562936d0c2cd",
+          "sha256": "a84c27a047ff4ffeb2e1c0df505f4ab5648dd761da12e5096335e4c4f2007e73",
+          "sha1": "0a5e868528e0eb4de712c3b3f534c8784fc1da50",
+          "md5": "43b1ad0625ba78ab0109a5b81d748d36"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultApiPublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipUnit-0.2.0-release.aar",
+          "url": "SkipUnit-0.2.0-release.aar",
+          "size": 11954,
+          "sha512": "e945591184d3be86de2606008e063d20e9d90ef0abb066b45fe142dd6083c07e12d2607cdc373773a5a01564b961ffbce75ed1ea827e87517c3de9a157f2d188",
+          "sha256": "7e4ee18fde1b2a98dc6326125f7a593e9cd79eedf227ca054459e3a10b42d76d",
+          "sha1": "3d9d17fe0addc916799fae3867d6901e49ca1a41",
+          "md5": "8a8d5b77a48ceb41093a57b9d4c14354"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultRuntimePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-bom",
+          "version": {
+            "requires": "2.3.0"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.test",
+          "module": "runner",
+          "version": {
+            "requires": "1.7.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-test",
+          "version": {
+            "requires": "1.11.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-test-junit",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "SkipUnit-0.2.0-release.aar",
+          "url": "SkipUnit-0.2.0-release.aar",
+          "size": 11954,
+          "sha512": "e945591184d3be86de2606008e063d20e9d90ef0abb066b45fe142dd6083c07e12d2607cdc373773a5a01564b961ffbce75ed1ea827e87517c3de9a157f2d188",
+          "sha256": "7e4ee18fde1b2a98dc6326125f7a593e9cd79eedf227ca054459e3a10b42d76d",
+          "sha1": "3d9d17fe0addc916799fae3867d6901e49ca1a41",
+          "md5": "8a8d5b77a48ceb41093a57b9d4c14354"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantDefaultSourcePublication",
+      "attributes": {
+        "com.android.build.api.attributes.BuildTypeAttr": "release",
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "SkipUnit-0.2.0-release-sources.jar",
+          "url": "SkipUnit-0.2.0-release-sources.jar",
+          "size": 2414,
+          "sha512": "f3622566235d47e0eeed670bc47e2de0eadcf7ea9b0edcf5fea0e1e08e0a030d7801fe5f91e9dd5153f7216c04d4eb26917c603e46b3c8a2d8e2562936d0c2cd",
+          "sha256": "a84c27a047ff4ffeb2e1c0df505f4ab5648dd761da12e5096335e4c4f2007e73",
+          "sha1": "0a5e868528e0eb4de712c3b3f534c8784fc1da50",
+          "md5": "43b1ad0625ba78ab0109a5b81d748d36"
+        }
+      ]
+    }
+  ]
+}

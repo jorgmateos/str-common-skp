@@ -30,30 +30,32 @@ This software is licensed under the
 
 ### Android (Kotlin)
 
-```bash
-skip export --debug --no-ios --module STRCommonSkp -d ../str-common-skp-export
+The Android artifacts are published as a Maven repository in the `maven` branch of this repo.
+
+`settings.gradle.kts`:
+
+```kotlin
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = uri("https://raw.githubusercontent.com/jorgmateos/str-common-skp/maven")
+            content { includeGroup("com.jorgmateos.strcommonskp") }
+        }
+    }
+}
 ```
 
-Copy the exported `*.aar` files (except `SkipUnit`) to `app/libs/` of the Android project (`minSdk` 28, arm64-v8a).
-Local `.aar` files carry no POM, so the Skip runtime dependencies must be declared explicitly:
+`app/build.gradle.kts` (`minSdk` 28; transitive Skip dependencies come from the POM):
 
 ```kotlin
 android {
-    defaultConfig { ndk { abiFilters += "arm64-v8a" } }
     packaging { jniLibs { useLegacyPackaging = true } }
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.aar"), "exclude" to listOf("SkipUnit*"))))
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom:2.3.0"))
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
-    implementation(platform("com.squareup.okhttp3:okhttp-bom:5.3.2"))
-    implementation("com.squareup.okhttp3:okhttp")
-    implementation("org.commonmark:commonmark:0.28.0")
-    implementation("org.commonmark:commonmark-ext-gfm-strikethrough:0.28.0")
-    implementation("androidx.annotation:annotation:1.9.1")
+    implementation("com.jorgmateos.strcommonskp:STRCommonSkp:<version>")
 }
 ```
 
@@ -81,3 +83,31 @@ import STRCommonSkp
 
 HelloWorldUseCase().execute() // Console: "Hello world from iOS"
 ```
+
+## TodoUseCase
+
+`TodoUseCase().execute(id:)` fetches `https://jsonplaceholder.typicode.com/todos/{id}` and returns the public `Todo`
+model (`id`, `userId`, `title`, `isCompleted`). The backend DTO is internal to the module. Failures throw
+`NetworkError` (`invalidURL`, `invalidResponse`, `decoding`) or the underlying `URLError`.
+
+```swift
+let todo = try await TodoUseCase().execute(id: 1)
+```
+
+On Android `execute` is a `suspend fun`, `Todo` a Kotlin class and `NetworkError` an `Exception`.
+The app needs `<uses-permission android:name="android.permission.INTERNET" />`.
+
+```kotlin
+scope.launch {
+    val todo = TodoUseCase().execute(1)
+}
+```
+
+## Releasing a new version
+
+```bash
+../release-str-common-skp.sh <version>
+```
+
+Creates the signed tag (iOS/SPM), exports the Android Gradle project, publishes all modules to the
+`maven` branch (stripping the Swift `.so` files to stay under GitHub's 100 MiB file limit) and pushes it.

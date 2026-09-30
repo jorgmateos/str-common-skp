@@ -1,0 +1,7 @@
+# Skip configuration for STRCommonSkpTests module
+
+#build:
+#  contents:
+
+skip:
+  mode: 'native'
